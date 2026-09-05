@@ -1,5 +1,7 @@
 package co.d3vlin.elementalmonsterduel.dto;
 
+import co.d3vlin.elementalmonsterduel.enums.Element;
+import co.d3vlin.elementalmonsterduel.enums.PowerRank;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
