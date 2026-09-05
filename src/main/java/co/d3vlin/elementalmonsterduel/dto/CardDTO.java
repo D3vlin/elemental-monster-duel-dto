@@ -1,6 +1,7 @@
 package co.d3vlin.elementalmonsterduel.dto;
 
 import co.d3vlin.elementalmonsterduel.enums.Element;
+import co.d3vlin.elementalmonsterduel.enums.Group;
 import co.d3vlin.elementalmonsterduel.enums.PowerRank;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -18,8 +19,8 @@ public class CardDTO {
     @Schema(description = "Element of the card")
     private Element element;
 
-    @Schema(description = "Elemental group")
-    private String elementGroup;
+    @Schema(description = "Family the element belongs to")
+    private Group elementGroup;
 
     @Schema(description = "Card power range")
     private PowerRank powerRank;
