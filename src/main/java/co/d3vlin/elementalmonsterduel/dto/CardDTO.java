@@ -1,0 +1,42 @@
+package co.d3vlin.elementalmonsterduel.dto;
+
+import co.d3vlin.elementalmonsterduel.enums.Element;
+import co.d3vlin.elementalmonsterduel.enums.Group;
+import co.d3vlin.elementalmonsterduel.enums.PowerRank;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.Data;
+
+@Data
+@JsonInclude(JsonInclude.Include.NON_NULL)
+public class CardDTO {
+    @Schema(description = "Card identifier")
+    private Long id;
+
+    @Schema(description = "Card name")
+    private String name;
+
+    @Schema(description = "Element of the card")
+    private Element element;
+
+    @Schema(description = "Family the element belongs to")
+    private Group elementGroup;
+
+    @Schema(description = "Card power range")
+    private PowerRank powerRank;
+
+    @Schema(description = "Base attack")
+    private Integer atk;
+
+    @Schema(description = "Base armor")
+    private Integer armor;
+
+    @Schema(description = "Base life")
+    private Integer life;
+
+    @Schema(description = "Seal turns before you can use the special ability")
+    private Integer seal;
+
+    @Schema(description = "Short lore")
+    private String lore;
+}
